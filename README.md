@@ -17,7 +17,7 @@ With TestMu AI (Formerly LambdaTest), you can run Selenium Gradle TestNG tests a
 
 ### Prerequisites
 
-- [Java](https://www.oracle.com/java/technologies/downloads/) and [Gradle](https://gradle.org/install/) installed
+- Java and Gradle installed
 - HyperExecute CLI — download the binary for your OS:
 
 | Operating System | CLI Download Link |
@@ -26,7 +26,7 @@ With TestMu AI (Formerly LambdaTest), you can run Selenium Gradle TestNG tests a
 | Windows | https://downloads.lambdatest.com/hyperexecute/windows/hyperexecute.exe |
 | macOS | https://downloads.lambdatest.com/hyperexecute/darwin/hyperexecute |
 
-- A TestMu AI (Formerly LambdaTest) account — [sign up here](https://www.testmuai.com/register/)
+- A TestMu AI (Formerly LambdaTest) account — sign up here
 
 ### Setup
 
@@ -104,7 +104,7 @@ gradle clean test
 gradle clean smokeTests
 ```
 
-Visit the [HyperExecute Dashboard](https://hyperexecute.lambdatest.com/hyperexecute) to monitor your job status and view detailed execution logs.
+Visit the HyperExecute Dashboard to monitor your job status and view detailed execution logs.
 
 ### Local testing with TestMu AI Tunnel
 
