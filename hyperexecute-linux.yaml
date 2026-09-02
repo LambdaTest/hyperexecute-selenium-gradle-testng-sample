@@ -1,5 +1,5 @@
 ---
-version: 0.1
+version: 0.2
 runson: linux
 
 autosplit: true
@@ -8,12 +8,14 @@ concurrency: 2
 pre:
   - gradle clean build -x test
 
-testDiscovery:
-  type: raw
-  mode: dynamic
-  command: grep 'class name' src/test/resources/testng.xml | awk '{print$2}' | sed 's/name=//g' | sed 's/\/\x3e//g'
+framework:
+  name: gradle/testng
+  defaultReports: false
+  flags:
+    - "-Dplatname=linux"
+  discoveryType: method
+  discoveryMode: remote
 
-testRunnerCommand: gradle test --tests $test
 
 retryOnFailure: true
 maxRetries: 1
